@@ -17,7 +17,7 @@ export const INIT_TODO_LIST: Array<TodoType> = [
     content: "Todo1 Content",
   },
   {
-    id: 1,
+    id: 2,
     title: "Todo2",
     content: "Todo2 Content",
   },

@@ -78,7 +78,7 @@ export const useTodo = () => {
    */
   const deleteTodo = useCallback(
     (targetId: number, targetTitle: string) => {
-      if (window.confirm(`「${targetTitle}」のtodolistを削除いたしますか？`)) {
+      if (window.confirm(`「${targetTitle}」のtodoListを削除いたしますか？`)) {
         const newTodoList = originTodoList.filter(
           (todo) => todo.id !== targetId
         );

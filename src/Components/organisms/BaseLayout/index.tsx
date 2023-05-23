@@ -19,7 +19,7 @@ type Props = {
  * @param {string} title
  * @returns {JSX.Element}
  */
-export const BaseaLayout: FC<Props> = ({ children, title }) => {
+export const BaseLayout: FC<Props> = ({ children, title }) => {
   return (
     <div className={styles.container}>
       <section className={styles.common}>

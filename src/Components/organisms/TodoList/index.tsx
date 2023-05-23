@@ -13,7 +13,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TodoType } from "../../../interfaces/Todo";
 import { useTodoList } from "./useTodoList";
-import styles from "./style.module.css";
+import styles from "./styles.module.css";
 
 type Props = {
   todoList: Array<TodoType>;
@@ -43,6 +43,8 @@ export const TodoList: FC<Props> = (props) => {
                   handleMoveDetailPage(todo.id);
                 }}
               />
+            </div>
+            <div className={styles.far}>
               <FontAwesomeIcon
                 icon={faPenToSquare}
                 size="lg"
@@ -50,6 +52,8 @@ export const TodoList: FC<Props> = (props) => {
                   handleMoveEditPage(todo.id);
                 }}
               />
+            </div>
+            <div className={styles.far}>
               <FontAwesomeIcon
                 icon={faTrashAlt}
                 size="lg"
