@@ -40,7 +40,7 @@ export const useTodoList = () => {
    */
   const handleMoveEditPage = useCallback(
     (id: number) => {
-      navigate(`${NAVIGATION_PATH}${id}`);
+      navigate(`${NAVIGATION_PATH.EDIT}${id}`);
     },
     [navigate]
   );
